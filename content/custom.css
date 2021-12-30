@@ -1,0 +1,61 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+h1, input {
+    font-size: 3rem;
+}
+
+#app {
+    flex: 1 0 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ededed;
+}
+
+.problem {
+    flex: 0 0 auto;
+    display: flex;
+    flex-flow: column;
+    width: 250px;
+    padding: 50px;
+    text-align: right;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    box-shadow: 2px 2px 12px;
+    background-color: #ffffff;
+}
+
+.problem h1 {
+    margin: 0;
+}
+
+.problem input {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    width: 150px;
+}
+
+.problem button {
+    flex: 0 0 auto;
+    margin-top: 5px;
+    align-self: center;
+    width: 100%;
+}
+
+p.result {
+    text-align: center;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Math Practice</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet"  href="./Content/custom.css" />
+</head>
+
+<body>
+    <div id="app">
+        <div class="problem">
+            <h1>{{problem.operand1}}</h1>
+            <h1>{{problem.operator}} {{problem.operand2}}</h1>
+            <input tabindex="1" type="tel" dir="rtl" v-model="answer" pattern="[0-9]+" @keydown="onAnswerKeydown($event)"/>
+            <button class="btn btn-primary" @click="checkAnswer()" type="submit">Check Answer</button>
+            <button class="btn btn-warning" @click="getNewProblem()">Get New Problem</button>
+            <p v-if="!isCorrect" class="result incorrect">&nbsp{{incorrectMessage}}&nbsp</p>
+            <p v-if="isCorrect" class="result correct">That's right!</p>
+            <p class="result correct">Correct Answers: {{correctCount}}</p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="./Scripts/app.js" type="module"></script>
+</body>
+
+</html>
