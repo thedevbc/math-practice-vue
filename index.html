@@ -13,7 +13,7 @@
         <div class="problem">
             <h1>{{problem.operand1}}</h1>
             <h1 style="border-bottom: 2px solid black;margin-bottom:3px;">{{problem.operator}} {{problem.operand2}}</h1>
-            <input tabindex="1" type="tel" dir="rtl" v-model="answer" pattern="[0-9]+" @keydown="onAnswerKeydown($event)"/>
+            <input id="answerInput" tabindex="1" type="tel" dir="rtl" v-model="answer" pattern="[0-9]+" @keydown="onAnswerKeydown($event)"/>
             <button class="btn btn-primary" @click="checkAnswer()" type="submit">Check Answer</button>
             <button class="btn btn-warning" @click="getNewProblem()">Get New Problem</button>
             <p v-if="!isCorrect" class="result incorrect">&nbsp{{incorrectMessage}}&nbsp</p>

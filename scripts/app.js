@@ -17,6 +17,7 @@ const app = Vue.createApp({
             this.answer = '';
             this.isCorrect = false;
             this.incorrectMessage = '';
+            document.getElementById('answerInput').focus();
         },
         checkAnswer() {
             this.isCorrect = this.problem.checkAnswer(reverseString(this.answer));
