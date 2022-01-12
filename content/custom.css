@@ -64,6 +64,7 @@ p.result {
 }
 
 button {
+    font-family: 'Lato', sans-serif;
     background-color: blue;
     color: white;
     border: none;
