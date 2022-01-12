@@ -20,7 +20,7 @@ const app = Vue.createApp({
             document.getElementById('answerInput').focus();
         },
         checkAnswer() {
-            this.isCorrect = this.problem.checkAnswer(reverseString(this.answer));
+            this.isCorrect = this.problem.checkAnswer(this.answer);
             if (this.isCorrect) {
                 this.correctCount++;
             } else {

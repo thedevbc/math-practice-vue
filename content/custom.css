@@ -3,6 +3,9 @@ html, body {
     height: 100%;
     display: flex;
     flex-flow: column;
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 h1, input {
@@ -36,9 +39,9 @@ h1, input {
 }
 
 .problem input {
-    unicode-bidi: bidi-override;
     direction: rtl;
-    width: 150px;
+    width: 98%;
+    text-align: right;
 }
 
 .problem button {
@@ -58,4 +61,25 @@ p.result {
 
 .incorrect {
     color: red;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    box-shadow: none;
+    font-size: 1rem;
+    padding: 15px;
+}
+button:hover{
+    opacity: .9;
+}
+button:active {
+    opacity: .5;
+}
+button#checkBtn {
+    background-color: green;
+}
+button#getNewBtn {
+    background-color: #ff8800;
 }
