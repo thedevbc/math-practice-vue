@@ -40,8 +40,6 @@ h1, input {
 
 .problem input {
     direction: rtl;
-    width: 98%;
-    text-align: right;
 }
 
 .problem button {
